@@ -12,31 +12,22 @@
 </head>
 
 <body>
-                                            <!-- mobieview -->
-<div class="mobile">
-<div class="menu-wrap">
-        <input type="checkbox" class="toggler" />
-        <div class="btnwht">
-          <div></div>
-        </div>
-        <div class="menu">
-          <div>
-            <ul>
-                <ul>
+    <div class="header row destop">
+        <div class="wrapper">
+            <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
+            <div class="had_right">
+                <ul class="nav">
                     <li><a href="#">kard</a></li>
                     <li><a href="#">kardless</a></li>
                     <li><a href="#">security</a></li>
                     <li><a href="#">rewards</a></li>
-                
-                <li><a href="#" class="getapp_btn"><img src="images/get-the-app-button.svg" alt=""></a></li>
-
-            </ul>
-          </div>
+                </ul>
+                <a href="#" class="getapp_btn"><img src="images/get-the-app-button.svg" alt=""></a>
+            </div>
         </div>
-      </div>
-
-
-      <div>
+    </div>
+    <!-- Desktopview -->
+    <div class="main destop">
         <div class="row banner">
             <div class="row anim_cont">
                 <div class="cont">
@@ -53,53 +44,54 @@
                     </div>
                 </div>
             </div>
-            <span id="play"><img src="images/down-arrow.svg" alt=""></span>
+            <span class="playbtn" id="play1"><img src="images/down-arrow.svg" alt=""></span>
         </div>
-
-      </div>
-
-</div>
-
-
-                                        <!-- destopview -->
-
-    <div class="main destop">
-        <div class="header row">
-            <div class="wrapper">
-                <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
-                <div class="had_right">
-                    <ul class="nav">
-                        <li><a href="#">kard</a></li>
-                        <li><a href="#">kardless</a></li>
-                        <li><a href="#">security</a></li>
-                        <li><a href="#">rewards</a></li>
+    </div>
+    <!-- mobieview -->
+    <div class="mobile">
+        <div>
+            <div class="menu-wrap">
+                <input type="checkbox" class="toggler" />
+                <div class="btnwht">
+                  <div></div>
+                </div>
+                <div class="menu">
+                  <div>
+                    <ul>
+                        <ul>
+                            <li><a href="#">kard</a></li>
+                            <li><a href="#">kardless</a></li>
+                            <li><a href="#">security</a></li>
+                            <li><a href="#">rewards</a></li>
+                        
+                        <li><a href="#" class="getapp_btn"><img src="images/get-the-app-button.svg" alt=""></a></li>
+        
                     </ul>
-                    <a href="#" class="getapp_btn"><img src="images/get-the-app-button.svg" alt=""></a>
+                  </div>
                 </div>
-            </div>  
+              </div>
             <div class="row banner">
-            <div class="row anim_cont">
-                <div class="cont">
-                    <h1>Kashware is an exclusive <br> ecosystem that unites your money.</h1>
-                    <p>#Spend #Save #StaySecured #EarnRewards #JoinTheKlub</p>
-                </div>
-                <div class="anim_cont2">
-                    <img src="images/kashware kard.png" alt="">
-                    <div class="cards_box">
-                        <div class="card left c1"><img src="images/metro.svg" alt=""></div>
-                        <div class="card left c2"><img src="images/rewards.svg" alt=""></div>
-                        <div class="card right c3"><img src="images/master-card.svg" alt=""></div>
-                        <div class="card right c4"><img src="images/visa.svg" alt=""></div>
+                <div class="row anim_cont">
+                    <div class="cont">
+                        <h1>Kashware is an exclusive <br> ecosystem that unites your money.</h1>
+                        <p>#Spend #Save #StaySecured #EarnRewards #JoinTheKlub</p>
+                    </div>
+                    <div class="anim_cont2">
+                        <img src="images/kashware kard.png" alt="">
+                        <div class="cards_box">
+                            <div class="card left c1"><img src="images/metro.svg" alt=""></div>
+                            <div class="card left c2"><img src="images/rewards.svg" alt=""></div>
+                            <div class="card right c3"><img src="images/master-card.svg" alt=""></div>
+                            <div class="card right c4"><img src="images/visa.svg" alt=""></div>
+                        </div>
                     </div>
                 </div>
+                <span class="playbtn" id="play2"><img src="images/down-arrow.svg" alt=""></span>
             </div>
-            <span id="play1"><img src="images/down-arrow.svg" alt=""></span>
         </div>
-        </div>
-      
     </div>
     <script>
-        var tl = gsap.timeline({paused: true});
+        var tl = gsap.timeline({ paused: true });
         tl.to(".anim_cont", { duration: 2.5, scale: 0.16, borderWidth: 0, opacity: 1 })
             .to(".anim_cont .cont", { duration: 2, opacity: 0 }, "-=2")
             .to(".banner .anim_cont2", { duration: 2, opacity: 1 }, "-=2")
@@ -107,11 +99,14 @@
             .to(".card.c3", { x: -20, y: -50, rotation: 13, scale: 0.86, opacity: 1, transformOrigin: 'bottom right' }, "-=0.5")
             .to(".card.c1", { x: 30, y: 20, rotation: -23, scale: 0.86, opacity: 1, transformOrigin: 'bottom left' })
             .to(".card.c4", { x: -32, y: 6, rotation: 24, scale: 0.86, opacity: 1, transformOrigin: 'bottom right' }, "-=0.5")
-        var play = document.querySelector("#play");
+        var play = document.querySelector("#play1");
+        var play2 = document.querySelector("#play2");
         play.onclick = function () {
             tl.play();
         }
-        
+        play2.onclick = function () {
+            tl.play();
+        }
     </script>
 </body>
 
