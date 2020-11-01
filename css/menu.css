@@ -14,7 +14,7 @@
     cursor: pointer;
     z-index: 2;
   }
-  .menu-wrap .hamburger {
+  .menu-wrap .btnwht {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,8 +29,8 @@
     z-index: 1;
   }
   
-  /* Hamburger line */
-  .menu-wrap .hamburger > div {
+  /* btnwht line */
+  .menu-wrap .btnwht > div {
     position: relative;
     top: 0;
     left: 0;
@@ -44,9 +44,9 @@
     transition: 0.4s;
   }
   
-  /* Hamburger top & bottom line */
-  .menu-wrap .hamburger > div:before,
-  .menu-wrap .hamburger > div:after {
+  /* btnwht top & bottom line */
+  .menu-wrap .btnwht > div:before,
+  .menu-wrap .btnwht > div:after {
     content: "";
     position: absolute;
     top: 10px;
@@ -56,22 +56,22 @@
     width: 100%;
     z-index: 1;
   }
-  .menu-wrap .hamburger > div:after {
+  .menu-wrap .btnwht > div:after {
     top: -10px;
   }
   
   /* Toggler Animation */
-  .menu-wrap .toggler:checked + .hamburger > div {
+  .menu-wrap .toggler:checked + .btnwht > div {
     transform: rotate(135deg);
   }
-  .menu-wrap .toggler:checked + .hamburger > div:before,
-  .menu-wrap .toggler:checked + .hamburger > div:after {
+  .menu-wrap .toggler:checked + .btnwht > div:before,
+  .menu-wrap .toggler:checked + .btnwht > div:after {
     top: 0;
     transform: rotate(90deg);
   }
   
   /* Rotate on hover when checked */
-  .menu-wrap .toggler:checked:hover + .hamburger > div {
+  .menu-wrap .toggler:checked:hover + .btnwht > div {
     transform: rotate(225deg);
   }
   .menu {
