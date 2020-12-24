@@ -2,112 +2,530 @@
 <html>
 
 <head>
-    <title>Kashware</title>
+    <title>BigApp</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
     <link href="css/menu.css" type="text/css" rel="stylesheet" />
+    <link href="css/filtermenu.css" type="text/css" rel="stylesheet" />
+
     <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" type="text/javascript"></script>
+    
 </head>
 
 <body>
-    <div class="header row destop">
-        <div class="wrapper">
-            <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
-            <div class="had_right">
-                <ul class="nav">
-                    <li><a href="#">kard</a></li>
-                    <li><a href="#">kardless</a></li>
-                    <li><a href="#">security</a></li>
-                    <li><a href="#">rewards</a></li>
-                </ul>
-                <a href="#" class="getapp_btn"><img src="images/get-the-app-button.svg" alt=""></a>
-            </div>
+    <div class="header row destop d_flex ">
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler" />
+         <div class="btnwht">
+         <div>
+      </div>
+     </div>
+      <div class="menu">
+      <div>
+   <ul>
+                           <li>
+                             <a href="#">
+                             <div><img src="./images/flight.svg"/> <span class="focus">Flight</span></div>
+                            </a>
+                             </li>
+                             <li class="line">
+                                 <a href="#">
+                           <div><img src="./images/airline_seat.svg"/> <span>Hotel</span></div>
+                            </a>
+                        </li>
+                <li >
+                         <a href="#">
+                        <div><img src="./images/class.svg"/> <span>Bookings</span></div>
+                         </a>
+                       </li>
+                       <li class="line">
+                          <a href="#">
+                   <div><img src="./images/emoji_people.svg"/> <span>Travellers</span></div>
+                         </a>
+                       </li> 
+                       <li>
+                     <a href="#">
+                    <div><img src="./images/account_balance.svg"/> <span>Agency Wallet</span></div>
+                 </a>
+                 </li> 
+               <li>
+                  <a href="#">
+            <div><img src="./images/group-black-18dp.svg"/> <span>Agency Users</span></div>
+                   </a>
+                      </li>  
+                      <li>
+                          <a href="#">
+                       <div><img src="./images/domain-black-18dp.svg"/> <span>Organisation Profile</span></div>
+                        </a>
+                   </li>
+                     <li>
+                   <a href="#">
+                   <div><img src="./images/setting.svg"/> <span>Settings</span></div>
+                 </a>
+              </li>
+              <li>
+                <a href="#">
+                 <div><img src="./images/info-black-18dp.svg"/> <span>About</span></div>
+                 </a>
+                    </li>
+                 <li>
+               <a href="#">
+            <div><img src="./images/help-black-18dp.svg"/> <span>Help & Feedback</span></div>
+            </a>
+       </li>
+ 
+         </ul>
+      </div>
+      </div>
+  </div>
+         <div class="popup" onclick="myFunction()">
+         <div class="logo"><p class="logo_letter">R</p>
+             <div class="popuptext flex_colmn" id="myPopup">
+ <h2>Account</h2>
+ <div class="flex_row p-1">
+     <div class="logo"><p class="logo_letter">R</p></div>
+     <a href="Profile.html">
+     <div class="flex_colmn" >
+
+         <span class="t-left">John Smith</span>
+         <span class="t-small">John Smith@Aol.com</span>
+     </div></a>
+ </div>
+ <div>
+     <button class="button1">Sign out</button>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ 
+ </div>
+
+
+
+ <div class="card ">
+    <div class="flex_colmn p_2">
+
+<div class=" flex_row m_p p_5">
+
+<div class="textbox_1 flex_row mr_1 center m_margin">
+<span>One-way</span>
+<span><img src="./images/arrow_drop_down-24px.svg"/></span>
+</div>
+
+<div class="textbox_2 flex_row mr_1 center m_margin">
+<span>1 Passenger</span>
+<span><img src="./images/arrow_drop_down-24px.svg"/></span>
+</div>
+
+<div class="textbox_3 flex_row center m_margin">
+    <span>Premium Economy</span>
+    <span><img src="./images/arrow_drop_down-24px.svg"/></span>
+    </div>
+
+</div>
+<div class=" flex_row m_p ">
+    <div class="textbox_4 flex_row center m_margin">
+   <span><img src="./images/flight_takeoff-24px.svg"/></span>
+    <span>Bengaluru</span>
+    <span>BNG</span>
+    </div>
+
+    <div class="swap_bck">
+<div class="swap"></div>
+</div>
+
+    <div class="textbox_5 flex_row mr_1 center m_margin">
+        <span><img src="./images/flight_land-24px.svg"/></span>
+         <span>New York</span>
+         <span></span>
+         </div>
+
+         <div class="textbox_6 flex_row mr_1 center m_margin">
+            <span><img src="./images/date_range-24px (2).svg"/></span>
+             <span>Sat, 29 Aug, 2020</span>
+             
+             </div>
+
+              <div class="textbox_7 flex_colmn center m_margin" >
+           <span class="clr_blue">+ ADD RETURN DATE</span>
+           <span class="clr_gry">Save more on return trips!</span>
+
+           
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="flex_row p_top3">
+
+
+
+    <!-- filtermenu -->
+
+    <div class="w-30 pt_7 filterbar">
+<div class="flex_row jc-space border-bottom">
+<div>
+    <img src="./images/filter_list-white-18dp.svg"/>
+    <span class="clr">Filter</span>
+</div>
+<div class="flex_row">
+<div><img src="./images/refresh-black-18dp.svg"/></div>
+<div><img src="./images/check-24px.svg"/></div>
+<span>Apply</span>
+
+</div>
+
+
+</div>
+<div class="p_a">
+<span >Stops</span>
+</div>
+
+<div class="flex_colmn border-bottom">
+<div class="flex_row jc-space">
+    <div>
+    <label class="container">No stops (5)
+        <input type="checkbox" >
+        <span class="checkmark"></span>
+      </label></div>
+      <div><span>$ 2000.00</span></div>
+</div>
+<div class="flex_row jc-space">
+    <div>
+    <label class="container"> 11 stop (2)
+        <input type="checkbox"checked="checked" >
+        <span class="checkmark"></span>
+      </label></div>
+      <div><span>$ 3500.00</span></div>
+</div>
+<div class="flex_row jc-space">
+    <div>
+    <label class="container">2+stops (5)
+        <input type="checkbox"checked="checked" >
+        <span class="checkmark"></span>
+      </label></div>
+      <div><span>$ 1600.00</span></div>
+</div> 
+
+</div>
+
+
+</div>
+<!-- end -->
+
+    
+    <div class="flex_colmn">
+    <div class="flex_row thrd_menu">
+    <div class="filterbox_1 flex_row w-50 mr_1 m_margin">
+<div><img src="./images/star_rate-24px.svg"/></div>
+<div class="flex_colmn">
+<span>Popular Flights</span>
+<div class="flex_row clr_gry">
+<span>$1206.00</span>
+<span>.</span>
+<span>Duration: 11h 54m</span>
+</div>
+</div>
+    </div>
+    <div class="filterbox_2 flex_row mr_1 m_margin">
+        <div><img src="./images/payments-white-18dp.svg"/></div>
+        <div class="flex_colmn">
+        <span>Cheapest Flights</span>
+        <div class="flex_row clr_gry">
+        <span>$1206.00</span>
+        <span>.</span>
+        <span>Duration: 11h 54m</span>
+        </div>
         </div>
     </div>
-    <!-- Desktopview -->
-    <div class="main destop">
-        <div class="row banner">
-            <div class="row anim_cont">
-                <div class="cont">
-                    <h1>Kashware is an exclusive <br> ecosystem that unites your money.</h1>
-                    <p>#Spend #Save #StaySecured #EarnRewards #JoinTheKlub</p>
-                </div>
-                <div class="anim_cont2">
-                    <img src="images/kashware kard.png" alt="">
-                    <div class="cards_box">
-                        <div class="card left c1"><img src="images/metro.svg" alt=""></div>
-                        <div class="card left c2"><img src="images/rewards.svg" alt=""></div>
-                        <div class="card right c3"><img src="images/master-card.svg" alt=""></div>
-                        <div class="card right c4"><img src="images/visa.svg" alt=""></div>
-                    </div>
-                </div>
-            </div>
-            <span class="playbtn" id="play1"><img src="images/down-arrow.svg" alt=""></span>
+    <div class="filterbox_3 flex_row mr_1 m_margin">
+        <div><img src="./images/speed-white-18dp.svg"/></div>
+        <div class="flex_colmn">
+        <span>Fastest Flights</span>
+        <div class="flex_row clr_gry">
+        <span>$1206.00</span>
+        <span>.</span>
+        <span>Duration: 11h 54m</span>
+        </div>
         </div>
     </div>
-    <!-- mobieview -->
-    <div class="mobile">
+    <div class="popup1" onclick="mycard()">
+    <div class=" filterbox_4 flex_row mr_1 m_margin" >
+        <div >
+            <img src="./images/sort-24px.svg"/></div>
+        <span>Other Sort Options</span>
+        <div><img src="./images/arrow_drop_down-24px.svg"/></div>
+        <div class="popuptext1 flex_colmn" id="myPopup1">
+           
+            <div class="card1  p-1">
+            <h3 class="sort">Sort by:</h3>
+            <div class="flex_colmn">
+              <div class="flex_row j_evenly "> <div><img src="./images/flight_takeoffclr.svg"/> </div><span>Duration Time</span></div> 
+              <div class="flex_row j_evenly pt_1">  <div><img src="./images/flight_land clr.svg"/> </div><span>Arrival Time</span></div>
+
+            </div>
+            </div>
+           
+            </div>
+</div>
+ </div>
+</div>
+<!-- <div class="flex_row p_top3">
+<div class="w-30">
+  jfjhhjf  
+</div> -->
+<div class="p_top3">
+<h3>Best Flights</h2>
+<h4  class="clr_gry">Total price includes taxes + fees for 1 adult. Additional bag fees and other fees may apply.</h3>
+<div class="flex_row pt_1">
+    
+<div class="flex_colmn">
+
+    <div class="dbox_1 flex_row center">
+    <div class="flex_row grid">
+        <div class="left_sec p_a" style="
+        display: flex;
+    ">
         <div>
-            <div class="menu-wrap">
-                <input type="checkbox" class="toggler" />
-                <div class="btnwht">
-                  <div></div>
-                </div>
-                <div class="menu">
-                  <div>
-                    <ul>
-                        <ul>
-                            <li><a href="#">kard</a></li>
-                            <li><a href="#">kardless</a></li>
-                            <li><a href="#">security</a></li>
-                            <li><a href="#">rewards</a></li>
-                        
-                        <li><a href="#" class="getapp_btn"><img src="images/get-the-app-button.svg" alt=""></a></li>
-        
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            <div class="row banner">
-                <div class="row anim_cont">
-                    <div class="cont">
-                        <h1>Kashware is an exclusive <br> ecosystem that unites your money.</h1>
-                        <p>#Spend #Save #StaySecured #EarnRewards #JoinTheKlub</p>
-                    </div>
-                    <div class="anim_cont2">
-                        <img src="images/kashware kard.png" alt="">
-                        <div class="cards_box">
-                            <div class="card left c1"><img src="images/metro.svg" alt=""></div>
-                            <div class="card left c2"><img src="images/rewards.svg" alt=""></div>
-                            <div class="card right c3"><img src="images/master-card.svg" alt=""></div>
-                            <div class="card right c4"><img src="images/visa.svg" alt=""></div>
-                        </div>
-                    </div>
-                </div>
-                <span class="playbtn" id="play2"><img src="images/down-arrow.svg" alt=""></span>
-            </div>
-        </div>
+            <img src="./images/spice jet.png">
+     </div><div class="flex_colmn pl_1 pr_7">
+        <span>21:55 - 07:00+2 Days</span>
+        <span class="clr_gry">Spicejet</span>
+     </div><div class="flex_colmn ">
+        <span>43 h 35 m</span>
+        <span class="clr_gry">BLR - JFK</span>
+     </div><div class="flex_colmn pl_1 pr_7">
+            <span>1 Stop</span>
+            <span class="clr_gry">25 h 20 m DEL</span>
+         </div></div>
+      <div class="right p_a"><div class="flex_colmn b_left pl_1">
+    <div>
+        <button class="button2">Book Now</button>
     </div>
-    <script>
-        var tl = gsap.timeline({ paused: true });
-        tl.to(".anim_cont", { duration: 2.5, scale: 0.16, borderWidth: 0, opacity: 1 })
-            .to(".anim_cont .cont", { duration: 2, opacity: 0 }, "-=2")
-            .to(".banner .anim_cont2", { duration: 2, opacity: 1 }, "-=2")
-            .to(".card.c2", { x: 30, y: -50, rotation: -13, scale: 0.86, opacity: 1, transformOrigin: 'bottom left' })
-            .to(".card.c3", { x: -20, y: -50, rotation: 13, scale: 0.86, opacity: 1, transformOrigin: 'bottom right' }, "-=0.5")
-            .to(".card.c1", { x: 30, y: 20, rotation: -23, scale: 0.86, opacity: 1, transformOrigin: 'bottom left' })
-            .to(".card.c4", { x: -32, y: 6, rotation: 24, scale: 0.86, opacity: 1, transformOrigin: 'bottom right' }, "-=0.5")
-        var play = document.querySelector("#play1");
-        var play2 = document.querySelector("#play2");
-        play.onclick = function () {
-            tl.play();
-        }
-        play2.onclick = function () {
-            tl.play();
-        }
-    </script>
+    
+    <div>
+     <button class="collapsible">Flight Details</button> 
+         
+     </div>
+   </div></div>
+    <div class="content">
+        <div class="bg-clr"></div>
+<div class="flex_row pt_1">
+<div class="P_ud"><img src="./images/lufthansa.png"/></div>
+<div class="flex_colmn w-70">
+<div class="flex_row">
+    <div><img src="./images/flight_takeoff-24px.svg"/><span>21:00</span></div>
+    <div>.</div>
+    <span>Kempegowda International Airport </br> Bengaluru (BLR)<small class="clr_gry">Terminal 1</small></span>
+</div>
+<span class="clr_gry t_time">Travel time: 10 h 45 m</span>
+<div class="flex_row">
+    <div><img src="./images/flight_land-24px.svg"/><span>23:45</span></div>
+    <div>.</div>
+    <span>Heathrow Airport (LHR)</span>
+</div>
+<div class="dash_box">
+<div class="p_1"><span> 22h 45 m layover</span>
+    <span>.</span>
+    <span>London (LHR)</span>
+    <span>Change of Planes</span>
+</div>
+</div>
+</div>
+<div class="flex_colmn">
+    <div><img src="./images/markunread_mailbox-white-18dp.svg"/><span>Baggage - 15 kgs</span></div>
+    <div><img src="./images/assessment-white-18dp.svg"/><span>Cabin - 7 kgs</span></div>
+
+</div>
+</div>
+
+<div class="flex_row pt_1">
+    <div class="P_ud"><img src="./images/P_Emirates-logo-full.png"/></div>
+    <div class="flex_colmn w-70">
+    <div class="flex_row">
+        <div><img src="./images/flight_takeoff-24px.svg"/><span>21:00</span></div>
+        <div>.</div>
+        <span>Kempegowda International Airport </br> Bengaluru (BLR)<small class="clr_gry">Terminal 1</small></span>
+    </div>
+    <span class="clr_gry t_time">Travel time: 10 h 45 m</span>
+    <div class="flex_row">
+        <div><img src="./images/flight_land-24px.svg"/><span>23:45</span></div>
+        <div>.</div>
+        <span>Heathrow Airport (LHR)</span>
+    </div>
+    <div class="dash_box">
+    <div class="p_1"><span> 22h 45 m layover</span>
+        <span>.</span>
+        <span>London (LHR)</span>
+        <span>Change of Planes</span>
+    </div>
+    </div>
+    </div>
+    <div class="flex_colmn">
+        <div><img src="./images/markunread_mailbox-white-18dp.svg"/><span>Baggage - 15 kgs</span></div>
+        <div><img src="./images/assessment-white-18dp.svg"/><span>Cabin - 7 kgs</span></div>
+    
+    </div>
+    </div>
+
+    <div class="flex_row pt_1">
+        <div class="P_ud"><img src="./images/P_Emirates-logo-full.png"/></div>
+        <div class="flex_colmn w-70">
+        <div class="flex_row">
+            <div><img src="./images/flight_takeoff-24px.svg"/><span>21:00</span></div>
+            <div>.</div>
+            <span>Kempegowda International Airport </br> Bengaluru (BLR)<small class="clr_gry">Terminal 1</small></span>
+        </div>
+        <span class="clr_gry t_time">Travel time: 10 h 45 m</span>
+        <div class="flex_row">
+            <div><img src="./images/flight_land-24px.svg"/><span>23:45</span></div>
+            <div>.</div>
+            <span>Heathrow Airport (LHR)</span>
+        </div>
+        <div class="dash_box">
+        <div class="p_1"><span> 22h 45 m layover</span>
+            <span>.</span>
+            <span>London (LHR)</span>
+            <span>Change of Planes</span>
+        </div>
+        </div>
+        </div>
+        <div class="flex_colmn">
+            <div><img src="./images/markunread_mailbox-white-18dp.svg"/><span>Baggage - 15 kgs</span></div>
+            <div><img src="./images/assessment-white-18dp.svg"/><span>Cabin - 7 kgs</span></div>
+        </div>
+        </div>
+</div>
+</div>
+  </div>
+  
+
+ <div class="dbox_1 flex_row center">
+    <div class="flex_row grid">
+        <div class="left_sec p_a" style="
+        display: flex;
+    ">
+        <div>
+            <img src="./images/spice jet.png">
+     </div><div class="flex_colmn pl_1 pr_7">
+        <span>21:55 - 07:00+2 Days</span>
+        <span class="clr_gry">Spicejet</span>
+     </div><div class="flex_colmn ">
+        <span>43 h 35 m</span>
+        <span class="clr_gry">BLR - JFK</span>
+     </div><div class="flex_colmn pl_1 pr_7">
+            <span>1 Stop</span>
+            <span class="clr_gry">25 h 20 m DEL</span>
+         </div></div>
+      <div class="right p_a"><div class="flex_colmn b_left pl_1">
+    <div>
+        <button class="button2">Book Now</button>
+    </div>
+    
+    <div>
+     <button class="collapsible">Flight Details</button> 
+         
+     </div>
+   </div></div>
+    
+</div>
+  </div>
+
+  <div class="dbox_1 flex_row center">
+    <div class="flex_row grid">
+        <div class="left_sec p_a" style="
+        display: flex;
+    ">
+        <div>
+            <img src="./images/spice jet.png">
+     </div><div class="flex_colmn pl_1 pr_7">
+        <span>21:55 - 07:00+2 Days</span>
+        <span class="clr_gry">Spicejet</span>
+     </div><div class="flex_colmn ">
+        <span>43 h 35 m</span>
+        <span class="clr_gry">BLR - JFK</span>
+     </div><div class="flex_colmn pl_1 pr_7">
+            <span>1 Stop</span>
+            <span class="clr_gry">25 h 20 m DEL</span>
+         </div></div>
+      <div class="right p_a"><div class="flex_colmn b_left pl_1">
+    <div>
+        <button class="button2">Book Now</button>
+    </div>
+    
+    <div>
+     <button class="collapsible">Flight Details</button> 
+         
+     </div>
+   </div></div>
+   
+</div>
+  </div>
+
+</div>
+<div class="flex_colmn">
+    <span>Economy</span> 
+    <span>$ 577.00</span> 
+    <span>Price per person </br> (incl. taxes & fees)</span> 
+    <span>Get up to $ 200 OFF. Use code: FCINTFLY</span> 
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="footer">
+    <div class="flex_row P_ud f_right ">
+      <span>About XYZXYZ</span>
+      <span>Privacy & Terms</span>
+      <span>Helpcenter and Consumer Information</span>
+ </div>
+ </div>
+
 </body>
 
 </html>
+<script>
+    
+    function myFunction() {
+ var popup = document.getElementById("myPopup");
+ popup.classList.toggle("show");
+}
+function mycard() {
+ var popup1 = document.getElementById("myPopup1");
+ popup1.classList.toggle("show");
+}
+// var coll = document.getElementsByClassName("collapsible");
+// var i;
+// function activetogg() {
+//     var togglecont = document.getElementsByClassName("content")[0];
+//     togglecont.classList.toggle("active");
+// }
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//   });
+// }
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var togglecont = document.getElementsByClassName("content")[0];
+    if (togglecont.style.maxHeight){
+        togglecont.style.maxHeight = null;
+    } else {
+        togglecont.style.maxHeight = togglecont.scrollHeight + "px";
+    } 
+  });
+}
+
+   </script>

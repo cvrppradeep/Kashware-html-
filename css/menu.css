@@ -1,5 +1,5 @@
 .menu-wrap {
-    position: fixed;
+    
     top: 0;
     left: 0;
     z-index: 1;
@@ -76,15 +76,14 @@
   }
   .menu {
     position: fixed;
-    top: 0;
+    top: 64px;
     left: 0;
-    background: rgb(77, 58, 58, 0.8);
+    background: white;
+    box-shadow: 4px 4px 10px #00000029;
     height: 100vh;
     width: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+   
     opacity: 0;
     transition: all var(--menu-speed) ease;
   }
@@ -96,35 +95,56 @@
     width: 100%;
     flex: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+   
     opacity: 0;
     transition: opacity 0.4s ease-in;
   }
   .menu ul {
     list-style: none;
+    padding-left: 1rem;
+    width: 15vw;
+
   }
   .menu li {
-    padding: 1rem 0;
+    padding: .5rem 0;
   }
   .menu > div a {
     text-decoration: none;
-    color: #fafafa;
-    font-size: 1.5rem;
+    color:#5F6368;
+    
     opacity: 0;
     transition: opacity 1s ease-in;
   }
   .menu a:hover {
-    color: rgb(230, 177, 177);
+    color: #FA6204;
     transition: color 0.3s ease-in;
+  }
+  
+  .focus:focus {
+    color:  #FA6204;
   }
   
   /* Show Menu */
   .menu-wrap .toggler:checked ~ .menu {
     opacity: 1;
-    width: 50vw;
+    width: 15vw;
     transition: all var(--menu-speed) ease;
+  }
+  
+  @media (max-width: 500px)  {
+    .menu-wrap .toggler:checked ~ .menu {
+     
+      width: 50vw;
+      
+    }
+  }
+  @media (max-width: 500px)  {
+    .menu ul {
+      list-style: none;
+      padding-left: 1rem;
+      width: 50vw;
+  
+    }
   }
   .menu-wrap .toggler:checked ~ .menu > div {
     opacity: 1;
@@ -134,7 +154,14 @@
     opacity: 1;
     transition: opacity 1s ease-in;
   }
-  
+ span{
+  font: normal normal medium 14px/18px Helvetica Neue;
+  font-size: small;
+  padding-left: 0.5rem;
+ }
+ .line{
+  border-bottom: 1px solid #F0F1F3;
+ }
   /* @media (max-width: 500px) {
     header {
       background: url("./bg-img.jpg") no-repeat 40% center / cover;
@@ -143,4 +170,7 @@
       width: 65vw;
     }
   } */
+  svg:hover {
+    fill: #FA6204;
+  }
   
